@@ -1,2 +1,2 @@
-    Neste projeto é realizado a busca no banco de dados que filtra todos os clientes do estado do
-    Rio Grande do Sul e imprime no console somente seus nomes
+    Neste projeto é utilizado as linguagens SQL e JPQL para realizar a mesma consulta no banco de dados.
+    A busca retorna ao usuário o nome de todos os clientes que residem no Rio Grande do Sul
