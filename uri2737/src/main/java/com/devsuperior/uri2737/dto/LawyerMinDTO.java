@@ -4,40 +4,45 @@ import com.devsuperior.uri2737.projections.LawyerMinProjection;
 
 public class LawyerMinDTO {
 
-	private String name;
-	private Integer customersNumber;
-	
-	public LawyerMinDTO() {
-	}
+    // Atributos de classe
+    private String name;
+    private Integer customersNumber;
 
-	public LawyerMinDTO(String name, Integer customersNumber) {
-		this.name = name;
-		this.customersNumber = customersNumber;
-	}
 
-	public LawyerMinDTO(LawyerMinProjection projection) {
-		name = projection.getName();
-		customersNumber = projection.getCustomersNumber();
-	}
+    // Construtores
+    public LawyerMinDTO() {
+    }
 
-	public String getName() {
-		return name;
-	}
+    public LawyerMinDTO(String name, Integer customersNumber) {
+        this.name = name;
+        this.customersNumber = customersNumber;
+    }
 
-	public void setName(String name) {
-		this.name = name;
-	}
+    public LawyerMinDTO(LawyerMinProjection projection) {
+        name = projection.getName();
+        customersNumber = projection.getCustomersNumber();
+    }
 
-	public Integer getCustomersNumber() {
-		return customersNumber;
-	}
+    // Getters & Setters
 
-	public void setCustomersNumber(Integer customersNumber) {
-		this.customersNumber = customersNumber;
-	}
+    public String getName() {
+        return name;
+    }
 
-	@Override
-	public String toString() {
-		return "LawyerMinDTO [name=" + name + ", customersNumber=" + customersNumber + "]";
-	}
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public Integer getCustomersNumber() {
+        return customersNumber;
+    }
+
+    public void setCustomersNumber(Integer customersNumber) {
+        this.customersNumber = customersNumber;
+    }
+
+    @Override
+    public String toString() {
+        return "Name = " + name + ", customersNumber = " + customersNumber;
+    }
 }
