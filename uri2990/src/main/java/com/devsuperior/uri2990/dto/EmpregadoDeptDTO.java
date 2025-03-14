@@ -49,6 +49,6 @@ public class EmpregadoDeptDTO {
 
 	@Override
 	public String toString() {
-		return "EmpregadoDeptDTO [cpf=" + cpf + ", enome=" + enome + ", dnome=" + dnome + "]";
+		return "CPF = " + cpf + ", Funcionário = " + enome + ", Departamento = " + dnome;
 	}
 }
